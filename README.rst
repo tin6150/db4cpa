@@ -50,10 +50,17 @@ Tin
 2016.08.05
 
 
-create_sqlite_db_script__4brian_feng
-
 
 
 ----
 
+git init
+git add README.rst
+git commit -a -m "initial commit, creating git repo via cli"
+git remote add origin https://tin6150@github.com/tin6150/db4cpa.git
+git push -u origin master
+
+# but still need to pre-create the db4cpa repo in github
+
+git push -u origin master
 
