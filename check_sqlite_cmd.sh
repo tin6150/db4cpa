@@ -3,7 +3,6 @@
 ## bash check_sqlite_cmd.sh   
 
 #CASA=`pwd`
-#SRC="/mnt/fusion1/fengbr2/db4cpa/07.14.2016_mini_SQL_output__eg"
 #SRC='/prj/id/bacteriology_hcs/output/07.14.2016_mini_SQL_output'
 #SRC='/prj/id/bacteriology_hcs/output/07.29.2016-CPA_test'
 #SRC='/prj/id/bacteriology_hcs/output/07.29.2016-CPA_test_recreated'

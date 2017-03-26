@@ -28,7 +28,7 @@ Run instructions:
 
 
 
-Overview of scripts and their purposes
+Overview of scripts and their purposes ::
 
 check_sqlite_cmd.sh             # run some sanity check against the created SQLite DB
 count_csv.sh                    # get count of lines in CSV, compare to output from above
@@ -36,7 +36,7 @@ generate_sqlite_load_cmd.sh     # actual import of CSV into DB, called by setup_
 load_csv.example.sql            # example load_csv.sql that should be created by generate_sqlite_load_cmd.sh
 setup_cmd.sh                    # main script to run to create the DB
 sqlite_scheme.ref.sql           # SQL commands to create "reference" DB.  
-sqlite_scheme.ref.sql           # This was generated from a previous run of CP that store output into SQLite (non HPC run)
+                                # This was generated from a previous run of CP that store output into SQLite (non HPC run)
                                 # If undertaking the task of running CP in non HPC mode to generate a sqlite DB, 
                                 # then using this schema is recommended as it is known to work.  
                                 # (Currently, actually using this in setup_cmd.sh
@@ -54,13 +54,13 @@ Tin
 
 ----
 
+::
+
 git init
 git add README.rst
 git commit -a -m "initial commit, creating git repo via cli"
 git remote add origin https://tin6150@github.com/tin6150/db4cpa.git
 git push -u origin master
-
 # but still need to pre-create the db4cpa repo in github
-
 git push -u origin master
 
