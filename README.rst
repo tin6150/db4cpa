@@ -13,7 +13,8 @@ a single SQLite DB suitable for use by CPA.
 
 
 
-Run instructions:
+Run instructions
+----------------
 
 1. create a folder to contain the SQLite DB 
    This dir will also store new CSV that have been stripped of " 
@@ -28,21 +29,24 @@ Run instructions:
 
 
 
-Overview of scripts and their purposes ::
+Overview of scripts and their purposes 
+--------------------------------------
 
-check_sqlite_cmd.sh             # run some sanity check against the created SQLite DB
-count_csv.sh                    # get count of lines in CSV, compare to output from above
-generate_sqlite_load_cmd.sh     # actual import of CSV into DB, called by setup_cmd.sh
-load_csv.example.sql            # example load_csv.sql that should be created by generate_sqlite_load_cmd.sh
-setup_cmd.sh                    # main script to run to create the DB
-sqlite_scheme.ref.sql           # SQL commands to create "reference" DB.  
-                                # This was generated from a previous run of CP that store output into SQLite (non HPC run)
-                                # If undertaking the task of running CP in non HPC mode to generate a sqlite DB, 
-                                # then using this schema is recommended as it is known to work.  
-                                # (Currently, actually using this in setup_cmd.sh
+::
 
-sqlite_scheme.sql               # Generated schema created by setup_cmd.sh.  Untested.
-                                # use only when don't have a schema from a previous SQLite output.
+        check_sqlite_cmd.sh             # run some sanity check against the created SQLite DB
+        count_csv.sh                    # get count of lines in CSV, compare to output from above
+        generate_sqlite_load_cmd.sh     # actual import of CSV into DB, called by setup_cmd.sh
+        load_csv.example.sql            # example load_csv.sql that should be created by generate_sqlite_load_cmd.sh
+        setup_cmd.sh                    # main script to run to create the DB
+        sqlite_scheme.ref.sql           # SQL commands to create "reference" DB.  
+                                        # This was generated from a previous run of CP that store output into SQLite (non HPC run)
+                                        # If undertaking the task of running CP in non HPC mode to generate a sqlite DB, 
+                                        # then using this schema is recommended as it is known to work.  
+                                        # (Currently, actually using this in setup_cmd.sh
+
+        sqlite_scheme.sql               # Generated schema created by setup_cmd.sh.  Untested.
+                                        # use only when don't have a schema from a previous SQLite output.
 
 
 
@@ -56,11 +60,17 @@ Tin
 
 ::
 
-git init
-git add README.rst
-git commit -a -m "initial commit, creating git repo via cli"
-git remote add origin https://tin6150@github.com/tin6150/db4cpa.git
-git push -u origin master
-# but still need to pre-create the db4cpa repo in github
-git push -u origin master
+        git init
+        git add README.rst
+        git commit -a -m "initial commit, creating git repo via cli"
+        git remote add origin https://tin6150@github.com/tin6150/db4cpa.git
+        git push -u origin master
+        # but still need to pre-create the db4cpa repo in github
+        git push -u origin master
 
+
+----
+
+.rst example https://github.com/tin6150/psg/blob/master/reStructuredText_markup.rst#preformatted-code-example
+
+But essentially need to use indent to make pre-formatted block of code (after :: marker)
